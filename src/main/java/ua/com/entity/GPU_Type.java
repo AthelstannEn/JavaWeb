@@ -17,7 +17,7 @@ import javax.persistence.Table;
 @Entity
 @Table(indexes={@Index(columnList = "type")})
 public class GPU_Type {
-
+//is GPU type
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
