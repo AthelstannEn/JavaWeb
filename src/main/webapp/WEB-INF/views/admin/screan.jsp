@@ -7,8 +7,6 @@
 
 
 
-
-    
    <div class="row">
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
@@ -21,15 +19,12 @@
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">
 					<li><a href="/admin/goodTypes">Category</a></li>
-					<li class="active"><a href="/admin/goodModels<custom:allParams/>">Product Models</a></li>
-					<li><a href="/admin/goodCountries">Color</a></li>
-					<li><a href="/admin/gpuTypes">Processor Model</a></li>
-					<li><a href="/admin/memoryTypes">Memory </a></li>
-					<li><a href="/admin/proccTypes">Frequncy Processor</a></li>
-					<li><a href="/admin/ramTypes">Ram size</a></li>
-						<li><a href="/admin/nvidia">Nvidia Models</a></li>
-							<li><a href="/admin/screan">Screan Size</a></li>
-					
+					<li class="active"><a href="/admin/goodModels<custom:allParams/>">Products</a></li>
+					<li><a href="/admin/goodCountries">Country </a></li>
+					<li><a href="/admin/gpuTypes">Grammature</a></li>
+					<li><a href="/admin/memoryTypes">Manufacturer </a></li>
+					<li><a href="/admin/proccTypes">Size</a></li>
+					<li><a href="/admin/ramTypes">Age category</a></li>
 				</ul>
 			</div>
 		</div>

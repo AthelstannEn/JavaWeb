@@ -4,8 +4,7 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ taglib uri="/WEB-INF/custom.tld" prefix="custom"%>
 
-    
-   <div class="row">
+     <div class="row">
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			<button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -17,17 +16,18 @@
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">
 					<li><a href="/admin/goodTypes">Category</a></li>
-					<li class="active"><a href="/admin/goodModels<custom:allParams/>">Product Models</a></li>
-					<li><a href="/admin/goodCountries">Color</a></li>
-					<li><a href="/admin/gpuTypes">Processor Model</a></li>
-					<li><a href="/admin/memoryTypes">Memory </a></li>
-					<li><a href="/admin/proccTypes">Frequency Processor</a></li>
-					<li><a href="/admin/ramTypes">Ram size</a></li>
+					<li class="active"><a href="/admin/goodModels<custom:allParams/>">Products</a></li>
+					<li><a href="/admin/goodCountries">Country </a></li>
+					<li><a href="/admin/gpuTypes">Grammature</a></li>
+					<li><a href="/admin/memoryTypes">Manufacturer </a></li>
+					<li><a href="/admin/proccTypes">Size</a></li>
+					<li><a href="/admin/ramTypes">Age category</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 </div>
+
 
 <div class="row">
 	<div class="col-md-3 col-xs-12">
@@ -53,7 +53,7 @@
 					</div>
 				
 					<div class="form-group">
-    					<label for="name" class="col-sm-2 control-label">Color</label>
+    					<label for="name" class="col-sm-2 control-label">MadeIN</label>
     					<div class="col-sm-10">
       						<form:input class="form-control" path="madeCountry" id="name"/>
     					</div>
@@ -68,7 +68,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-4 col-xs-4"><h3>Made Country</h3></div>
+			<div class="col-md-4 col-xs-4"><h3> Country</h3></div>
 			<div class="col-md-4 col-xs-4"><h3>Update</h3></div>
 			<div class="col-md-4 col-xs-4"><h3>Delete</h3></div>
 		</div>

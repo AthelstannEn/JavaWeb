@@ -13,14 +13,14 @@
 					<div class="row">
 						<div class="col-md-4 text-left" style="margin-top:220px">
 							<div  style="margin-left:70px">
-							<h3 style="color:#444"><b>GET WHAT YOU REALLY WANTED.</b></h3>
-							<p><h4 style="color:#444">Here’s to guilt-free self-gifting. Save up to $419 on Hustler's PCs.
+							<h3 style="color:#444"><b></b></h3>
+							<p><h4 style="color:#444">
 
 							</h4></p>
 							</div>
 						</div>
 						<div class="col-md-8" style="margin-left:-20px">
-							<img src="https://s29.postimg.org/dtaikpvw7/aurora_ink.png" width="100%">
+							<img src="" width="100%">
 						</div>
 					</div>
 				</div>
@@ -36,23 +36,12 @@
 							<h3 style="color:#f5f5f5"><b>PLAY MORE. SPEND LESS.</b></h3>
 							<p><h5 style="color:#f5f5f5">For a limited time, save $100 off select Alienware PCs $999+ with coupon <b>100OFF999</b>.
 							</h5></p>
-							<div class="row">
-								<div class="col-md-8">
-										<c:forEach items="${types}" var="type">
-								<c:choose>
-									<c:when test="${type.id=='2'}">
-										<p><a href="/type/${type.id}" class="ShopNow"><b>SHOP NOW</b></a></p>
-									</c:when>
-								</c:choose>
-							</c:forEach>	
-<!-- 									<p><a href="C:\Users\unwis\Desktop\html\project_S\new 1.html" class="getNow text-center"><b>SHOP NOW</b></a></p> -->
-								</div>	
-							</div>
+							
 							</div>
 						</div>
-						<div class="col-md-7">
+						<!-- <div class="col-md-7">
 							<img src="https://s29.postimg.org/vkttoourb/alienware_homepage_premigration_day01_Module_5a.jpg" width="100%">
-						</div>
+						</div> -->
 					</div>
 				</div>
 				

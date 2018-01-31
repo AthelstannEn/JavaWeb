@@ -5,8 +5,31 @@
 <%@ taglib uri="/WEB-INF/custom.tld" prefix="custom"%>
 
 
-    
-   <div class="row">
+       <div class="row">
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<button type="button" class="navbar-toggle" data-toggle="collapse"
+				data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li><a href="/admin/goodTypes">Category</a></li>
+					<li class="active"><a href="/admin/goodModels<custom:allParams/>">Products</a></li>
+					<li><a href="/admin/goodCountries">Country </a></li>
+					<li><a href="/admin/gpuTypes">Grammature</a></li>
+					<li><a href="/admin/memoryTypes">Manufacturer </a></li>
+					<li><a href="/admin/proccTypes">Size</a></li>
+					<li><a href="/admin/ramTypes">Age category</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</div>
+
+<%--    <div class="row">
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			<button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -29,7 +52,7 @@
 		</div>
 	</nav>
 </div>
-
+ --%>
 <div class="row">
 	<div class="col-md-3 col-xs-12">
 	

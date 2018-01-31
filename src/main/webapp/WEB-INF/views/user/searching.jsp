@@ -22,7 +22,7 @@
 	<div class="col-md-3 col-xs-3">
 	<form:form class="form-horizontal filter" action="/user/searching" method="GET" modelAttribute="filter">
 			<custom:hiddenInputs excludeParams="min, max, goodTypesId, goodsId, gpuTypesId, memoriesId, proccTypesId, ramTypesId, _goodTypesId, _goodsId, _gpuTypesId, _memoriesId, _proccTypesId, _ramTypesId"/>
-			
+		<%-- 	
 			<div class="form-group">
 				<div class="col-sm-4">
 					<form:input path="min" class="form-control" placeholder="Min price"/>
@@ -71,6 +71,72 @@
 			<button type="submit" class="btn btn-primary black-background white">APPLY</button>
 			<a class="btn btn-primary black-background white" href="/user/searching/cancel">CANCEL</a>
 			
+		</form:form> --%>
+		
+			<div class="form-group">
+				<div class="col-sm-6">
+					<form:input path="min" class="form-control" placeholder="Min price"/>
+				</div>
+				<div class="col-sm-6">
+					<form:input path="max" class="form-control" placeholder="Max price"/>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-12">Product type</label>
+				<div class="col-sm-12">
+					<form:checkboxes element="div" items="${goodTypes}" itemValue="id" itemLabel="type" path="goodTypesId"/>
+				</div>
+			</div>
+		
+			<div class="form-group">
+				<label class="control-label col-sm-12">Grammature</label>
+				<div class="col-sm-12">
+					<form:checkboxes element="div" items="${gpuTypes}" itemValue="id" itemLabel="type" path="gpuTypesId"/>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<label class="control-label col-sm-12">Size</label>
+				<div class="col-sm-12">
+					<form:checkboxes element="div" items="${proccs}" itemValue="id" itemLabel="type" path="proccTypesId"/>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-12">Country</label>
+				<div class="col-sm-12">
+					<form:checkboxes element="div" items="${goods}" itemValue="id" itemLabel="madeCountry" path="goodsId"/>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-12">Manufacturer </label>
+				<div class="col-sm-12">
+					<form:checkboxes element="div" items="${memories}" itemValue="id" itemLabel="type" path="memoriesId"/>
+				</div>
+			</div>
+			
+			
+			<%-- 	<div class="form-group">
+				<label class="control-label col-sm-12">Nvidia </label>
+				<div class="col-sm-12">
+					<form:checkboxes element="div" items="${nvidia}" itemValue="id" itemLabel="type" path="nvidiaId"/>
+				</div>
+			</div>
+			
+				<div class="form-group">
+				<label class="control-label col-sm-12">Screan Size </label>
+				<div class="col-sm-12">
+					<form:checkboxes element="div" items="${screan}" itemValue="id" itemLabel="type" path="screanId"/>
+				</div>
+			</div>
+			
+			 --%>
+			<div class="form-group">
+				<label class="control-label col-sm-12">Age category </label>
+				<div class="col-sm-12">
+					<form:checkboxes element="div" items="${rams}" itemValue="id" itemLabel="ramType" path="ramTypesId"/>
+				</div>
+			</div>
+			<button type="submit" class="btn btn-primary">Go</button>
 		</form:form>
 	</div>
 	<div class="col-md-9 col-xs-9">
@@ -89,15 +155,15 @@
 		<div class="col-md-8">
 			<p>Type: ${goodModel.goodType.type}</p>
 			<br>
-		<p>Model: ${goodModel.modelName}</p>
+		<p>Name: ${goodModel.modelName}</p>
 			<br>
-			<p>Fruq: ${goodModel.gpuType.type} </p>
+			<p>Gramature: ${goodModel.gpuType.type} </p>
 			<br>
-			<p>Memory: ${goodModel.memoryType.type}</p>
+			<p>Manufactur: ${goodModel.memoryType.type}</p>
 			<br>
-			<p>Ram: ${goodModel.ramType.ramType}</p>
+			<p>Age: ${goodModel.ramType.ramType}</p>
 			<br>
-			<p>Color: ${goodModel.good.madeCountry}</p>
+			<p>Country: ${goodModel.good.madeCountry}</p>
 			<br>
 			<p>Price: ${goodModel.price} $</p>
 			<br>
@@ -117,10 +183,9 @@
 	</div>
 	
 	
+ 	<div class="col-md-2 col-xs-12" >
 	
-	<div class="col-md-2 col-xs-12" >
-	
-		<div class="row">
+		
 					<div class="col-md-6 col-xs-6 text-center">
 						<div class="dropdown">
 							<button class="btn btn-primary dropdown-toggle" type="button"
@@ -136,10 +201,10 @@
 					<div class="col-md-6 col-xs-6 text-center">
 						<custom:size posibleSizes="1,2,5,10" size="${page.size}" />
 					</div>
-		</div>
+		
 	
 	</div>
-</div>
+
 
 <!-- appld -->
 

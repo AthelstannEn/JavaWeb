@@ -10,9 +10,7 @@
 </style>
 
 
-    
-    
-   <div class="row">
+     <div class="row">
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			<button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -24,12 +22,12 @@
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">
 					<li><a href="/admin/goodTypes">Category</a></li>
-					<li class="active"><a href="/admin/goodModels<custom:allParams/>">Product Models</a></li>
-					<li><a href="/admin/goodCountries">Color</a></li>
-					<li><a href="/admin/gpuTypes">Processor Model</a></li>
-					<li><a href="/admin/memoryTypes">Memory </a></li>
-					<li><a href="/admin/proccTypes">Frequency Processor</a></li>
-					<li><a href="/admin/ramTypes">Ram size</a></li>
+					<li class="active"><a href="/admin/goodModels<custom:allParams/>">Products</a></li>
+					<li><a href="/admin/goodCountries">Country </a></li>
+					<li><a href="/admin/gpuTypes">Grammature</a></li>
+					<li><a href="/admin/memoryTypes">Manufacturer </a></li>
+					<li><a href="/admin/proccTypes">Size</a></li>
+					<li><a href="/admin/ramTypes">Age category</a></li>
 				</ul>
 			</div>
 		</div>
@@ -45,41 +43,40 @@
 			
 			<div class="form-group">
 				<div class="col-sm-6">
-					<form:input path="min" class="form-control" placeholder="Min"/>
+					<form:input path="min" class="form-control" placeholder="Min price"/>
 				</div>
 				<div class="col-sm-6">
-					<form:input path="max" class="form-control" placeholder="Max"/>
+					<form:input path="max" class="form-control" placeholder="Max price"/>
 				</div>
 			</div>
 			<div class="form-group">
-				<label class="control-label col-sm-12">Type</label>
+				<label class="control-label col-sm-12">Product type</label>
 				<div class="col-sm-12">
 					<form:checkboxes element="div" items="${goodTypes}" itemValue="id" itemLabel="type" path="goodTypesId"/>
 				</div>
 			</div>
+		
 			<div class="form-group">
-				<label class="control-label col-sm-12">Color</label>
-				<div class="col-sm-12">
-					<form:checkboxes element="div" items="${goods}" itemValue="id" itemLabel="madeCountry" path="goodsId"/>
-				</div>
-			</div>
-			<div class="form-group">
-				<label class="control-label col-sm-12">Proc Model</label>
+				<label class="control-label col-sm-12">Grammature</label>
 				<div class="col-sm-12">
 					<form:checkboxes element="div" items="${gpuTypes}" itemValue="id" itemLabel="type" path="gpuTypesId"/>
 				</div>
 			</div>
 			
 			<div class="form-group">
-				<label class="control-label col-sm-12">Frequncy</label>
+				<label class="control-label col-sm-12">Size</label>
 				<div class="col-sm-12">
 					<form:checkboxes element="div" items="${proccs}" itemValue="id" itemLabel="type" path="proccTypesId"/>
 				</div>
 			</div>
-			
-			
 			<div class="form-group">
-				<label class="control-label col-sm-12">Memory </label>
+				<label class="control-label col-sm-12">Country</label>
+				<div class="col-sm-12">
+					<form:checkboxes element="div" items="${goods}" itemValue="id" itemLabel="madeCountry" path="goodsId"/>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-12">Manufacturer </label>
 				<div class="col-sm-12">
 					<form:checkboxes element="div" items="${memories}" itemValue="id" itemLabel="type" path="memoriesId"/>
 				</div>
@@ -102,7 +99,7 @@
 			
 			 --%>
 			<div class="form-group">
-				<label class="control-label col-sm-12">RAM </label>
+				<label class="control-label col-sm-12">Age category </label>
 				<div class="col-sm-12">
 					<form:checkboxes element="div" items="${rams}" itemValue="id" itemLabel="ramType" path="ramTypesId"/>
 				</div>
@@ -121,7 +118,7 @@
 						<label style="color:red;text-align:left;" for="mtype" class="col-sm-10 col-sm-offset-2 control-label"><form:errors path="goodType"/></label>
 					</div>
 					<div class="form-group">
-    					<label for="mtype" class="col-sm-2 control-label">Model Type</label>
+    					<label for="mtype" class="col-sm-2 control-label">Product type</label>
     					<div class="col-sm-10">
       						<form:select class="form-control" path="goodType" id="mtype" items="${goodTypes}" itemValue="id" itemLabel="type"/>
     					</div>
@@ -132,7 +129,7 @@
 						<label style="color:red;text-align:left;" for="name" class="col-sm-10 col-sm-offset-2 control-label"><form:errors path="modelName"/></label>
 					</div>
   					<div class="form-group">
-    					<label for="name" class="col-sm-2 control-label">Model Name</label>
+    					<label for="name" class="col-sm-2 control-label">Product Name</label>
     					<div class="col-sm-10">
       						<form:input type="text" class="form-control" path="modelName" id="name"/>
     					</div>
@@ -140,7 +137,7 @@
   					
   					
   					<div class="form-group">
-    					<label for="mg" class="col-sm-2 control-label">Model Processor</label>
+    					<label for="mg" class="col-sm-2 control-label">Grammature</label>
     					<div class="col-sm-10">
       						<form:select class="form-control" path="gpuType" id="mg" items="${gpuTypes}" itemLabel="type" itemValue="id"/>
     					</div>
@@ -149,24 +146,11 @@
   					
   					
   					<div class="form-group">
-    					<label for="mp" class="col-sm-2 control-label">GPU frequncy</label>
+    					<label for="mp" class="col-sm-2 control-label">Size</label>
     					<div class="col-sm-10">
       						<form:select class="form-control" path="proccType" id="mp" items="${proccs}" itemLabel="type" itemValue="id"/>
     					</div>
   					</div>
-  					
-  					
-  					
-  					
-  					
-  					
-  					<div class="form-group">
-    					<label for="mm" class="col-sm-2 control-label"> Memory</label>
-    					<div class="col-sm-10">
-      						<form:select class="form-control" path="memoryType" id="mm" items="${memories}" itemLabel="type" itemValue="id"/>
-    					</div>
-  					</div>
-  					
   					
   					
   					<%-- 	<div class="form-group">
@@ -187,7 +171,7 @@
   					
   					
   					<div class="form-group">
-    					<label for="mr" class="col-sm-2 control-label"> RAM</label>
+    					<label for="mr" class="col-sm-2 control-label"> Age category</label>
     					<div class="col-sm-10">
       						<form:select class="form-control" path="ramType" id="mr" items="${rams}" itemLabel="ramType" itemValue="id"/>
     					</div>
@@ -197,21 +181,32 @@
 						<label style="color:red;text-align:left;" for="mprice" class="col-sm-10 col-sm-offset-2 control-label"><form:errors path="price"/></label>
 					</div>
   					
+  				
+  					
+  					
   					<div class="form-group">
-    					<label for="mprice" class="col-sm-2 control-label">Model Price</label>
+    					<label for="mk" class="col-sm-2 control-label">Country </label>
+    					<div class="col-sm-10">
+      						<form:select class="form-control" path="good" id="mk" items="${goods}" itemLabel="madeCountry" itemValue="id"/>
+    					</div>
+  					</div>
+  					
+  					
+  						<div class="form-group">
+    					<label for="mm" class="col-sm-2 control-label"> Manufacturer</label>
+    					<div class="col-sm-10">
+      						<form:select class="form-control" path="memoryType" id="mm" items="${memories}" itemLabel="type" itemValue="id"/>
+    					</div>
+  					</div>
+  					
+  					
+  						<div class="form-group">
+    					<label for="mprice" class="col-sm-2 control-label">Product Price</label>
     					<div class="col-sm-10">
       						<form:input type="text" class="form-control" path="price" id="mprice"/>
     					</div>
   					</div>
   					
-  					
-  					
-  					<div class="form-group">
-    					<label for="mk" class="col-sm-2 control-label">Color </label>
-    					<div class="col-sm-10">
-      						<form:select class="form-control" path="good" id="mk" items="${goods}" itemLabel="madeCountry" itemValue="id"/>
-    					</div>
-  					</div>
   					
   					<div class="form-group">
     					<label for="name" class="col-sm-2 control-label">Photo</label>
@@ -226,22 +221,28 @@
       						<a class="btn btn-primary" href="/admin/goodModels/cancel">Cancel</a>
     					</div>
   					</div>
+  					
+  					
+  					
+  					
+  					
+  					
 				</form:form>
 			</div>
 		</div>
 		<div class="row">
 		
 		
-			<div class="col-md-1 col-xs-1"><h4>Type   </h4></div>
-			<div class="col-md-2 col-xs-2"><h4>Name   </h4></div>
-			<div class="col-md-1 col-xs-1"><h4>GPU    </h4></div>
-			<div class="col-md-1 col-xs-1"><h4>Memory </h4></div>
-			<div class="col-md-1 col-xs-1"><h4>Processor</h4></div>
-			<div class="col-md-1 col-xs-1"><h4>RAM      </h4></div>
-			<div class="col-md-1 col-xs-1"><h4>Made     </h4></div>
-			<div class="col-md-2 col-xs-2"><h4>Price    </h4></div>
-			<div class="col-md-1 col-xs-1"><h4>Update    </h4></div>
-			<div class="col-md-1 col-xs-1"><h4>Delete    </h4></div>
+			<div class="col-md-2 col-xs-2"><h5>Type   </h5></div>
+			<div class="col-md-2 col-xs-2"><h5>Name   </h5></div>
+			<div class="col-md-1 col-xs-1"><h5>Gramature    		  </h5></div>
+			<div class="col-md-1 col-xs-1"><h5>Manufac.		  </h5></div>
+			<div class="col-md-1 col-xs-1"><h5>Processor	  </h5></div>
+			<div class="col-md-1 col-xs-1"><h5>Age   </h5></div>
+			<div class="col-md-1 col-xs-1"><h5>Made     	  </h5></div>
+			<div class="col-md-1 col-xs-1"><h5>Price    	  </h5></div>
+			<div class="col-md-1 col-xs-1"><h5>Update    	  </h5></div>
+			<div class="col-md-1 col-xs-1"><h5>Delete    	  </h5></div>
 		</div>
 		
 		
@@ -251,14 +252,14 @@
 			<c:forEach items="${page.content}" var="goodModel" >
 						<div class="row">
 					<!-- <div class="col-md-2 col-xs-2"> </div> -->
-					<div class="col-md-1 col-xs-1">${goodModel.goodType.type}</div>
+					<div class="col-md-2 col-xs-2">${goodModel.goodType.type}</div>
 					<div class="col-md-2 col-xs-2">${goodModel.modelName}</div>
 					<div class="col-md-1 col-xs-1">${goodModel.gpuType.type}</div>
 					<div class="col-md-1 col-xs-1">${goodModel.memoryType.type}</div>
 					<div class="col-md-1 col-xs-1">${goodModel.proccType.type}</div>
 					<div class="col-md-1 col-xs-1">${goodModel.ramType.ramType}</div>
 					<div class="col-md-1 col-xs-1">${goodModel.good.madeCountry}</div>
-					<div class="col-md-2 col-xs-2">${goodModel.price} $</div>
+					<div class="col-md-1 col-xs-1">${goodModel.price} $</div>
 					<div class="col-md-1 col-xs-1"><a class="btn btn-warning" href="/admin/goodModels/update/${goodModel.id}<custom:allParams/>">update</a></div>
 					<div class="col-md-1 col-xs-1"><a class="btn btn-danger" href="/admin/goodModels/delete/${goodModel.id}<custom:allParams/>">delete</a></div>
 				</div>
@@ -273,9 +274,6 @@
 <div class="col-md-2 col-xs-2">
 
 </div>
-					
-
-
 
 <div class="col-md-8 col-xs-8">
 ${goodModel.modelName}

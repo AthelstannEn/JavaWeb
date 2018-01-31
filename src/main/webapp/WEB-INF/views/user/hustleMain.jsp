@@ -2,32 +2,107 @@
     pageEncoding="UTF-8"%>
      <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-			
+			     <div class="row" style="background-color:black">	
+					<div class="col-md-10 text-center col-md-offset-1" style="color:white">
+						<h2 style="margin-top:40px"><b>Welcome to Drugstore Ukraine </b></h2>
+
+						
+						
+					</div>	
+			</div>
 				<div class="row">
 					<div class="col-md-3 col-md-offset-2 text-left" style=" border-left: 1px solid #ccc;">
-						<h5><b>INNOVATION.</b>​</h5>
+						<h3><b>Інноваційний підхід</b>​</h3>
 						<hr>
-						<p>We push gaming limits—rigorously testing technology and partnering with forward-thinking companies like Steam and Oculus—to redefine the boundaries of our reality.</p>
+						<p>
+						<h4>
+						Впровадження інформаціних технологій дозволяє
+						 пацієнту вибрати оптимальну схему лікування та придбати лікарський засіб в
+						  залежності від його уподобань та рекомендацій лікаря. 
+						</h4>
+						
+						</p>
 					</div>
 					<div class="col-md-3 text-left" style=" border-left: 1px solid #ccc;">
-						<h5><b>ONE PASSION UNITES US ALL.</b>​</h5>
+						<h3><b>Фокус на пацієнта</b>​</h3>
 						<hr>
-						<p>Join the battle at Alienware Arena online. Get tips, free giveaways and a worldwide community of gamers, united by love of competition and passion for immersion.</p>
+						<p><h4>Пацієнт має змогу придбати лікарські
+						 засоби та отримати консультацію лікаря в он лайн режимі. 
+						 Це дозволяє заощадити час та зменшити витрати. </h4> </p>
 					</div>
 					<div class="col-md-3 text-left" style=" border-left: 1px solid #ccc;">
-						<h5><b>WE STARTED A MOVEMENT.</b>​</h5>
+						<h3><b>Ефективність</b>​</h3>
 						<hr>
-						<p>We were first—to implement lightning-fast NVIDIA® graphics, to create mobile gaming machines that truly deliver. Here’s to the past, present and future of gaming.</p>
+						<p><h4>Лікарські засоби пропонуютсья до продажу в залежності
+						 від сучасних схем лікування.
+						 Замовлення та асортимент лікарських засобів ретельно 
+						 перевіряються категорійним менеджером.</h4></p>
 					</div>
 				</div>
 				<hr>
+				<br>
+				<div style="margin-left:220px">
+					<div class="text-left" style="margin-right:350px">
+					
+					
+					<h3><b>Угода про отримання інформації про лікарські засоби, що відпускаються за рецептом</b></h3>
+					<hr>
+					<br>
+					<p>
+					В даному розділі сайту компанія "Драгстор Юкрейн" ("Drugstore Ukraine")
+					 надає інформацію про лікарські засоби, що відпускаються за рецептом, 
+					 їх властивості, способи застосування та можливі протипоказання виключно 
+					 спеціалістам охорони здоров’я (особам, що мають вищу або середню спеціальну медичну освіту).
+					
+					</p>
+					<hr>
+					<p>
+					У випадку, якщо Ви не є спеціалістом охорони здоров’я, проте,
+					 порушуючи ці умови, підписуєте дану угоду, компанія "Драгстор Юкрейн" 
+					 ("Drugstore Ukraine") не несе відповідальності за можливі негативні наслідки,
+					  що можуть виникнути в результаті самостійного використання Вами інформації з 
+					  цього розділу сайту, без попередньої консультації зі спеціалістом охорони здоров’я – лікарем.
+					   Ви робите це самостійно та осмислено, усвідомлюючи, що застосування лікарських засобів, що відпускаються за рецептом,
+					    можливо тільки після попередньої консультації зі спеціалістом охорони здоров’я – лікарем.
+					</p>
+					<p>
+					
+					Інформація про лікарські засоби, що відпускаються за рецептом, компанії "Драгстор Юкрейн" ("Drugstore Ukraine") 
+					надається виключно для ознайомлення з лікарськими засобами та не є посібником для самостійної діагностики або лікування,
+					а також, не може бути використана в якості медичних порад або рекомендацій. Компанія "Драгстор Юкрейн" ("Drugstore Ukraine") 
+					не несе відповідальності за можливу шкоду, спричинену Вашому здоров’ю у разі самостійного лікування, що проводиться на базі
+				використання лікарських засобів, що відпускаються за рецептом (без попередньої консультації 
+				зі спеціалістом охорони здоров’я – лікарем).
+					</p>
+					<hr>
+					<p><b>
+					Цим я підтверджую, що є спеціалістом охорони здоров’я та 
+					підтверджую свою згоду з тим, що використання лікарських засобів, що відпускаються
+за рецептом, можливо тільки після попередньої консультації зі спеціалістом.
+					</b></p>
+					<hr>
+					<p>
+					Якщо Ви не згодні з даною угодою, то, на жаль, 
+					ми не можемо надати Вам доступ до перегляду інформації даного розділу сайту.
+					</p>
+					
+			</div>
+			</div>	
+			<br>
+			
+			
 				<div class="row">
-					<div class="col-md-12">
-						<img src="https://www.notebookcheck-ru.com/uploads/tx_nbc2/4zu3macbook12.jpg" style="width:100%">
+				<div class="col-md-1">
+				</div>
+					<div class="col-md-10">
+						 <img src="resources/img/4238.jpg" style="width:100%"> 
+
 					</div>
+				<div class="col-md-1">	
+				</div>	
 				</div>
 				
-				<div class="row " >
+		<!-- 		<div class="row " >
 					<div class="col-md-3  text-right mainFreedom">
 						<h2><b>FREEDOM OF CHOICE.</b>​</h2>
 						<p>BUnlock documents with a touch.
@@ -36,4 +111,4 @@ Touch ID makes it a snap to open password-protected files on supported iOS devic
 					<div class="col-md-9 steamMachine" >
 						<img src="https://s.appleinsider.ru/2016/10/Main-Air-13.jpg" style="width:70%">
 					</div>	
-				</div>	
+				</div>	 -->

@@ -44,8 +44,7 @@
 						<ul class="dropdown-menu">
 							<li><a href="/supportArea">SUPPORT AREA</a></li>
 							<li role="separator" class="divider"></li>
-							<li><a href="/warrantyAndUpgrade">WARRANTY EXTENTION AND
-									UPGRADE</a></li>
+							<li><a href="/warrantyAndUpgrade">Be sure to read</a></li>
 							<li role="separator" class="divider"></li>
 							<li><a href="/peoples">REST people test</a></li>
 						</ul></li>

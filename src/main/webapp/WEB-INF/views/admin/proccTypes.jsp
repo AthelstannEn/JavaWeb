@@ -7,8 +7,7 @@
 
 
 
-    
-   <div class="row">
+     <div class="row">
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			<button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -20,17 +19,18 @@
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">
 					<li><a href="/admin/goodTypes">Category</a></li>
-					<li class="active"><a href="/admin/goodModels<custom:allParams/>">Product Models</a></li>
-					<li><a href="/admin/goodCountries">Color</a></li>
-					<li><a href="/admin/gpuTypes">Processor Model</a></li>
-					<li><a href="/admin/memoryTypes">Memory </a></li>
-					<li><a href="/admin/proccTypes">frequency Processor</a></li>
-					<li><a href="/admin/ramTypes">Ram size</a></li>
+					<li class="active"><a href="/admin/goodModels<custom:allParams/>">Products</a></li>
+					<li><a href="/admin/goodCountries">Country </a></li>
+					<li><a href="/admin/gpuTypes">Grammature</a></li>
+					<li><a href="/admin/memoryTypes">Manufacturer </a></li>
+					<li><a href="/admin/proccTypes">Size</a></li>
+					<li><a href="/admin/ramTypes">Age category</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 </div>
+
 
 <div class="row">
 	<div class="col-md-3 col-xs-12">
@@ -55,7 +55,7 @@
 					</div>
 				
 					<div class="form-group">
-    					<label for="name" class="col-sm-2 control-label">Frequency </label>
+    					<label for="name" class="col-sm-2 control-label">Size </label>
     					<div class="col-sm-10">
       						<form:input class="form-control" path="type" id="name"/>
     					</div>
@@ -70,13 +70,13 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-8 col-xs-8"><h3>Frequency</h3></div>
+			<div class="col-md-8 col-xs-8"><h3>Size</h3></div>
 			<div class="col-md-2 col-xs-2"><h3>Update</h3></div>
 			<div class="col-md-2 col-xs-2"><h3>Delete</h3></div>
 		</div>
 			<c:forEach items="${page.content}" var="procc">
 				<div class="row">
-					<div class="col-md-8 col-xs-8">${procc.type} Hz</div>
+					<div class="col-md-8 col-xs-8">${procc.type} </div>
 					<div class="col-md-2 col-xs-2"><a class="btn btn-warning" href="/admin/proccTypes/update/${procc.id}<custom:allParams/>">update</a></div>
 					<div class="col-md-2 col-xs-2"><a class="btn btn-danger" href="/admin/proccTypes/delete/${procc.id}<custom:allParams/>">delete</a></div>
 				</div>

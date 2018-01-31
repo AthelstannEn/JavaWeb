@@ -7,7 +7,7 @@
 
 <div class="row backgroundstyle">
 		
-		<h1 class="regText" style="text-align: center;margin-left:130px;"><p style="color:red";>SING UP , Apple. </p></h1>
+		<h1 class="regText" style="text-align: center;margin-left:130px;"><p style="color:red";>SING UP  </p></h1>
 	
 	<div class="col-sm-12 col-xs-9 col-md-offset-3">
 		<form:form class="form-horizontal" action="/RegForm" method="POST" modelAttribute="user">

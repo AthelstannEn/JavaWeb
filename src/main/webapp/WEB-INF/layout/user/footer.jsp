@@ -10,16 +10,15 @@
 		<div class="row">
 			<div class="col-md-12  text-center " style="background-color:#f2f2f2">
 				<div class="botText">
-					<h5 style="margin-top:30px"><b>Copyright © 2017 Apple Corporation</b></h5>
-					<h5 style="margin-top:30px"><b>Teaming up with someone who uses Microsoft Word? Pages makes it simple.
-					 You can save Pages documents as Word files. Or import and edit Word documents right in Pages. 
-					 Most popular Word features are supported, too. 
-					Now it’s no problem to work on the same project. Even if you use different apps.
+					<h5 style="margin-top:30px"><b>Copyright © 2017 Drugstore Ukraine</b></h5>
+					<h5 style="margin-top:30px"><b>
+				<a href="supportArea/#info">	Read our site usage guidelines</a>
 </b></h5>
 				</div>	
-						<p><h5><b style="color:#7d7d7d">Mail us <br> <b>apple@icload.com</b> <br> if You have questions.</b></h5></p>
-					
-						<p style="margin-top:50px" >© 2017 Apple.com </p>
+						<p><h5><b style="color:#7d7d7d">Mail us <br> <b>drugstoreukraine@gmail.com</b> <br> if You have questions.</b></h5></p>
+					<p> <a href="/hustleMain"> Back to home </p></a>
+						<p style="margin-top:50px" >© 2017 Drugstore Ukraine </p>
 			</div>
+		
 		</div>
 	</div>

@@ -99,7 +99,9 @@ body {
 }
 
 .backgroundstyle{
-	background-image:url(https://store.storeimages.cdn-apple.com/4974/as-images.apple.com/is/image/AppleInc/aos/published/images/m/bp/mbp15ex/gallery1/mbp15ex-gallery1-201610?wid=2000&hei=1536&fmt=jpeg&qlt=95&op_sharpen=0&resMode=bicub&op_usm=0.5,0.5,0,0&iccEmbed=0&layer=comp&.v=1476384157498);
+	/* background-image:url(https://store.storeimages.cdn-apple.com/4974/as-images.apple.com/is/image/AppleInc/aos/published/images/m/bp/mbp15ex/gallery1/mbp15ex-gallery1-201610?wid=2000&hei=1536&fmt=jpeg&qlt=95&op_sharpen=0&resMode=bicub&op_usm=0.5,0.5,0,0&iccEmbed=0&layer=comp&.v=1476384157498);
+	 */backgroung-image:url(img/11.jpg);
+	
 	background-attachment:fixed;
 	margin-bottom: 20px;
 	margin-top: 0px;
